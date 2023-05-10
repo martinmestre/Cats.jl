@@ -2,13 +2,13 @@ module Cats
 
     using PythonCall
 
-    @py import astropy.table as at
+    @py import astropy.constants as cons
 
     export myfoo
 
-    function myfoo(file_orig)
-        data = at.Table.read(file_orig)
-        return data
+    function myfoo()
+        g = cons.G
+        return g
     end
 
 end
