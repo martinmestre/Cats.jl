@@ -1,19 +1,7 @@
 module Cats
 
-    using PythonCall
-    const np = PythonCall.pynew()
+    using IntrospectiveStreams
 
-    function __init__()
-        PythonCall.pycopy!(np, pyimport("numpy"))
-    end
-
-    export myfoo
-
-    function myfoo()
-        println("newfoo")
-        g = np.sin(np.pi/2.)
-        return g
-    end
-
+    include("run_extinction.jl")
 
 end
