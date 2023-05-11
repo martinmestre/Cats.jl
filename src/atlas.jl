@@ -1,10 +1,8 @@
 """Atlas struct and methods for the CATS project."""
 
-function build_atlas()
-
-    return
+struct atlas{T}
+    x::T
 end
-
 
 function save(🐈::atlas)
 
@@ -12,6 +10,11 @@ function save(🐈::atlas)
 end
 
 function display(🐈::atlas)
+
+    return
+end
+
+function build_atlas()
 
     return
 end
