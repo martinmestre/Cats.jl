@@ -2,6 +2,7 @@ module Cats
 
     using IntrospectiveStreams
 
-    include("run_extinction.jl")
+    export remove_extinction
+    export build_atlas
 
 end
