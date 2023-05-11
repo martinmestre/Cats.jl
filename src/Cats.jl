@@ -2,7 +2,10 @@ module Cats
 
     using IntrospectiveStreams
 
-    export remove_extinction
-    export build_atlas
+    export  atlas,
+            build_atlas
+
+    include("atlas_struct.jl")
+    include("atlas_build.jl")
 
 end
