@@ -5,7 +5,7 @@ module Cats
     export  atlas,
             build_atlas
 
-    include("atlas_struct.jl")
-    include("atlas_build.jl")
+    include("atlas.jl")
+
 
 end
